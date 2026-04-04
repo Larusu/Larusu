@@ -49,3 +49,4 @@ jobs:
           plugin_projects: no
           plugin_projects_descriptions: yes
           plugin_projects_limit: 6
+          config_debug: yes
