@@ -8,6 +8,8 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    environment: 
+      name: production
     permissions:
       contents: write
     steps:
@@ -17,7 +19,7 @@ jobs:
 
           # Options
           user: Larusu
-          template: repository
+          template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Manila
           plugin_activity: yes
