@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@3.33.0
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
@@ -50,4 +50,3 @@ jobs:
           plugin_projects: no
           plugin_projects_descriptions: yes
           plugin_projects_limit: 6
-          config_debug: yes
